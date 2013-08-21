@@ -1,5 +1,5 @@
 require "test/unit"
-require "./lib/browserid-verify.rb"
+require "browserid-verify"
 
 class TC_Verify < Test::Unit::TestCase
   def test_simple_1
