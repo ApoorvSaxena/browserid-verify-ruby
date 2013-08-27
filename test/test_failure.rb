@@ -1,5 +1,7 @@
-require "test/unit"
-require "browserid-verify"
+require 'test/unit'
+require 'browserid/verify'
+
+include BrowserID::Verify
 
 class TC_Verify < Test::Unit::TestCase
   def test_simple_1

@@ -1,8 +1,9 @@
 require "test/unit"
 require 'webmock/test_unit'
-require "browserid-verify"
+require 'browserid/verify'
 
 include WebMock::API
+include BrowserID::Verify
 
 stub_request(:post, "https://verifier.login.persona.org/verify").
   with(:body => {"assertion"=>"invalid assertion", "audience"=>"http://localhost"},
