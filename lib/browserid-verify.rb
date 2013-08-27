@@ -35,7 +35,11 @@ class Verify
 
     # if we have a non-200 response
     if ! response.kind_of? Net::HTTPSuccess
-      return {"status" => "failure", "reason" => "Something went wrong with the request"}
+      return {
+        "status" => "failure",
+        "reason" => "Something went wrong with the request",
+        "body" => response.body
+      }
     end
 
     # process the response
