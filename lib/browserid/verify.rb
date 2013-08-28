@@ -50,7 +50,7 @@ module BrowserID
     end
 
     def verify_remotely(audience, assertion, url = 'https://verifier.login.persona.org/verify')
-      verifier = Verify.new('remote', audience)
+      verifier = Verify.new('remote', audience, url)
       return verifier.verify(assertion)
     end
 
