@@ -8,5 +8,5 @@ Gem::Specification.new do |s|
   s.email       = 'chilts@mozilla.com'
   s.files       = ["lib/browserid/verify.rb"]
   s.homepage    = 'http://rubygems.org/gems/browserid-verify'
-  s.license     = 'MIT'
+  s.license     = 'MPL 2'
 end
