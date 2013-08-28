@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "Verify assertions either remotely or locally (remote only for the moment)."
   s.authors     = ["Andrew Chilton"]
   s.email       = 'chilts@mozilla.com'
-  s.files       = ["lib/browserid-verify.rb"]
+  s.files       = ["lib/browserid/verify.rb"]
   s.homepage    = 'http://rubygems.org/gems/browserid-verify'
   s.license     = 'MIT'
 end
