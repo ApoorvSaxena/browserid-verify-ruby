@@ -21,20 +21,12 @@ module BrowserID
       end
 
       def verify(assertion)
-        # puts 'Calling Verifier ...'
-
         # make a new request
         request = Net::HTTP::Post.new(@uri.path)
         request.set_form_data({"audience" => @audience, "assertion" => assertion})
 
         # send the request
         response = @https.request(request)
-        # puts response.class
-        # puts Net::HTTPSuccess
-        # puts response.kind_of? Net::HTTPSuccess
-        # puts response.code
-        # puts response.message
-        # puts response.body
 
         # if we have a non-200 response
         if ! response.kind_of? Net::HTTPSuccess
@@ -52,7 +44,6 @@ module BrowserID
           return  {"status" => "failure", "reason" => "Received invalid JSON from the remote verifier"}
         end
 
-        # puts '- done'
         return data
       end
 
