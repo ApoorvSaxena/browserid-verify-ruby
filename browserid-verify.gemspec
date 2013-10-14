@@ -13,10 +13,9 @@ Gem::Specification.new do |s|
   s.email            = 'chilts@mozilla.com'
 
   s.require_paths    = ["lib"]
-  s.files            = ["lib/browserid/verify.rb"]
+  s.files            = ["LICENSE", "README.md", "lib/browserid/verify.rb"]
 
   s.extra_rdoc_files = ["LICENSE", "README.md"]
-  s.files            = ["LICENSE", "README.md"]
 
   s.test_files = ["test/test_busy.rb", "test/test_okay.rb", "test/integration/test_failure.rb"]
 end
